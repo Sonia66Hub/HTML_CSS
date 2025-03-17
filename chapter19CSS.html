@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container1 {
+        width: 300px;
+        height: 300px;
+        background-color: lightblue;
+        position: relative;
+      }
+
+      .child {
+        width: 100px;
+        height: 100px;
+        background-color: orange;
+        position: absolute;
+        top: 50px;
+        left: 50px;
+      }
+
+      .sticky-header {
+        position: sticky;
+        top: 0;
+        background-color: green;
+        color: white;
+        text-align: center;
+        padding: 10px;
+      }
+      .container {
+        overflow: hidden;
+        background-color: #f4f4f4;
+        padding: 20px;
+      }
+
+      .float-left {
+        width: 45%;
+        float: left;
+        background-color: lightblue;
+        margin-right: 10px;
+        padding: 20px;
+      }
+
+      .float-right {
+        width: 45%;
+        float: left;
+        background-color: lightgreen;
+        padding: 20px;
+      }
+      .box {
+        width: 200px;
+        height: 200px;
+        position: absolute;
+      }
+      .box1 {
+        background-color: red;
+        top: 50px;
+        left: 50px;
+        z-index: 1;
+      }
+      .box2 {
+        background-color: blue;
+        top: 100px;
+        left: 100px;
+        z-index: 2;
+      }
+      .box3 {
+        background-color: green;
+        top: 150px;
+        left: 150px;
+        z-index: 3;
+      }
+      .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100px;
+        background-color: lightblue;
+      }
+
+      .items {
+        width: 100px;
+        height: 50px;
+        background-color: orange;
+        text-align: center;
+        line-height: 50px;
+        color: white;
+      }
+      .flex-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: lightgreen;
+      }
+
+      .flex-item {
+        width: 100px;
+        height: 100px;
+        background-color: orange;
+        text-align: center;
+        line-height: 100px;
+        color: white;
+        margin: 10px;
+      }
+      .flex-container1 {
+        display: flex;
+        justify-content: center;
+        width: 300px;
+        height: 150px;
+        border: 1px solid black;
+        gap: 10px;
+      }
+      .flex-item1 {
+        border: 1px solid red;
+      }
+      .flex-container2 {
+        display: flex;
+        align-items: flex-end;
+        width: 300px;
+        height: 150px;
+        border: 1px solid black;
+        gap: 10px;
+      }
+      .flex-item2 {
+        border: 1px solid red;
+      }
+      .flex-container3 {
+        display: flex;
+        align-items: baseline;
+        width: 300px;
+        height: 150px;
+        border: 1px solid black;
+        gap: 10px;
+      }
+      .flex-item3 {
+        border: 1px solid red;
+      }
+      .item1 {
+        height: 50px;
+      }
+      .item2 {
+        line-height: 80px;
+      }
+      .flex-container4 {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-evenly;
+        width: 300px;
+        height: 150px;
+        border: 1px solid black;
+        gap: 10px;
+      }
+      .flex-item4 {
+        border: 1px solid red;
+        flex-basis: 120px;
+      }
+      .flex-container5 {
+        display: flex;
+        align-items: center;
+        height: 100vh;
+        background-color: lightgray;
+      }
+
+      .flex-item5 {
+        width: 100px;
+        height: 100px;
+        background-color: orange;
+        text-align: center;
+        line-height: 100px;
+        color: white;
+        margin: 10px;
+      }
+
+      .item-1 {
+        align-self: flex-start;
+      }
+
+      .item-2 {
+        align-self: center;
+      }
+
+      .item-3 {
+        align-self: flex-end;
+      }
+      .grid-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 100px);
+        gap: 10px;
+        background-color: lightgray;
+      }
+
+      .grid-item {
+        background-color: orange;
+        text-align: center;
+        line-height: 100px;
+        color: white;
+        font-size: 20px;
+      }
+      .container6 {
+        border: 1px solid black;
+        width: 300px;
+        height: 60px;
+      }
+      .child6 {
+        border: 1px solid red;
+        width: 150px;
+        margin: auto;
+      }
+      .container7 {
+        border: 1px solid black;
+        width: 300px;
+      }
+      .child7 {
+        border: 1px solid red;
+        margin-top: 50px;
+        margin-bottom: 50px;
+      }
+      .container8 {
+        position: relative;
+        border: 1px solid black;
+        width: 300px;
+        height: 150px;
+      }
+      .child8 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border: 1px solid red;
+      }
+      .another-child8 {
+        border: 1px solid blue;
+      }
+    </style>
+  </head>
+  <body>
+    <p><label for="">CSS Position</label></p>
+
+    <div class="container1">
+      <div class="child"></div>
+    </div>
+    <p>
+      <a href="index.html" style="background-color: black; color: #fff"
+        >Go Back</a
+      >
+    </p>
+    <div class="sticky-header">
+      This header sticks to the top of the page when you scroll down.
+    </div>
+
+    <p><label for="">CSS Float</label></p>
+    <h1>Float Clearfix Example</h1>
+    <div class="container">
+      <div class="float-left">This is a floated left box.</div>
+      <div class="float-right">This is a floated right box.</div>
+    </div>
+
+    <p><label for="">CSS Z-index</label></p>
+    <div class="box box1"></div>
+    <div class="box box2"></div>
+    <div class="box box3"></div>
+
+    <p><label for="">CSS Flexbox</label></p>
+    <div class="container">
+      <div class="item">Item 1</div>
+      <div class="item">Item 2</div>
+      <div class="item">Item 3</div>
+    </div>
+
+    <p><label for="">Flex Container</label></p>
+    <div class="flex-container">
+      <div class="flex-item">Item 1</div>
+      <div class="flex-item">Item 2</div>
+      <div class="flex-item">Item 3</div>
+    </div>
+
+    <p><label for="">Flex Container</label></p>
+    <div class="flex-container1">
+      <div class="flex-item1">Item 1</div>
+      <div class="flex-item1">Item 2</div>
+      <div class="flex-item1">Item 3</div>
+    </div>
+
+    <p><label for="">Flex Container</label></p>
+    <div class="flex-container2">
+      <div class="flex-item2">Item 1</div>
+      <div class="flex-item2">Item 2</div>
+      <div class="flex-item2">Item 3</div>
+    </div>
+
+    <p><label for="">Flex Container</label></p>
+    <div class="flex-container3">
+      <div class="flex-item3">Item 1</div>
+      <div class="flex-item3">Item 2</div>
+      <div class="flex-item3">Item 3</div>
+    </div>
+    <p><label for="">Flex Container</label></p>
+    <div class="flex-container4">
+      <div class="flex-item4">Item 1</div>
+      <div class="flex-item4">Item 2</div>
+      <div class="flex-item4">Item 3</div>
+    </div>
+
+    <p><label for=""> Flex Items</label></p>
+    <div class="flex-container5">
+      <div class="flex-item item5">Item 1</div>
+      <div class="flex-item item5">Item 2</div>
+      <div class="flex-item item5">Item 3</div>
+    </div>
+
+    <p><label for="">CSS Grid</label></p>
+    <div class="grid-container">
+      <div class="grid-item">Item 1</div>
+      <div class="grid-item">Item 2</div>
+      <div class="grid-item">Item 3</div>
+      <div class="grid-item">Item 4</div>
+      <div class="grid-item">Item 5</div>
+      <div class="grid-item">Item 6</div>
+      <div class="grid-item">Item 7</div>
+      <div class="grid-item">Item 8</div>
+      <div class="grid-item">Item 9</div>
+    </div>
+
+    <p><label for="">CSS Alignment</label></p>
+    <body>
+      <div class="container6">
+        <div class="child6">I'm the child element</div>
+      </div>
+    </body>
+
+    <p><label for="">CSS Alignment</label></p>
+    <body>
+      <div class="container7">
+        <div class="child7">I'm the child element</div>
+      </div>
+    </body>
+
+    <p><label for="">Perfect Centering</label></p>
+    <div class="container8">
+      <div class="child8">I'm a child element</div>
+      <div class="another-child8">I'm another child element</div>
+    </div>
+    <a href="index.html">Go Back</a>
+  </body>
+</html>

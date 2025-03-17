@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+        :root {
+            --primary-color: #3498db;
+            --secondary-color: #2ecc71;
+            --font-size: 16px;
+            --padding: 20px;
+        }
+
+       
+        body {
+            font-size: var(--font-size);
+            background-color: var(--primary-color);
+            padding: var(--padding);
+        }
+
+        .button {
+            background-color: var(--secondary-color);
+            color: white;
+            padding: var(--padding);
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .container {
+            width: calc(100% - 40px); 
+            background-color: #3498db;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+       
+        
+        .box {
+            width: calc(50% + 30px); /* 50% of the parent width + 30px */
+            height: calc(100px - 20px); /* 100px minus 20px */
+            background-color: #e74c3c;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to CSS Variables</h1>
+    <button class="button">Click Me</button>
+
+    <h2>CSS Counters</h2>
+    <div class="container">
+        This container's width is 100% minus 40px.
+    </div>
+    <h2>CSS Calculation</h2>
+    <div class="box"></div>
+    <a href="index.html">Go Back</a>
+</body>
+</html>

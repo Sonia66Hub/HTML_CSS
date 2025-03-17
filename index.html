@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+     
+     body{
+            background-image: url(images/fluid-abstract-blue-background-free-vector.jpg);
+            background-size: cover;
+            background-position: contain;
+            background-attachment: fixed;
+            opacity: 0.8;
+            margin: 0;
+            height: 100vh;
+            display: flex;
+           flex-direction: column;       
+           
+        }
+        header {
+           display: flex;
+            align-items: center;
+            justify-content: center; 
+            color: white;
+            padding: 10px 0;
+            background-color: #2eb2daa2;
+        }
+        header img {
+            width: 200px; 
+            height: 90px;
+            margin-right: -60px;
+           margin-top: -20px;
+           margin-left: -50px;
+           
+             
+        }
+      article {
+        text-align: center;
+        color: #fff;
+        font-size: x-large;
+        margin-bottom: 80px;
+      }
+      nav {
+        background-color: #2eb2da2d;
+        color: white;
+        padding: 10px;
+      }
+
+      nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+      }
+
+      nav li {
+        position: relative;
+        margin: 0 15px;
+      }
+
+      nav a {
+        color: white;
+        text-decoration: none;
+        padding: 8px 12px;
+        display: block;
+        transition: background-color 0.3s ease;
+      }
+
+      nav a:hover {
+        background-color: #555;
+      }
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+      }
+
+      .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+
+      .dropdown-content a:hover {
+        background-color: #ddd;
+      }
+
+      nav li:hover .dropdown-content {
+        display: block;
+      }
+
+      .dropbtn {
+        background-color: inherit;
+        color: white;
+        padding: 8px 12px;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+
+      .dropbtn:hover {
+        background-color: #555;
+      }
+      @media (max-width: 768px) {
+      }
+    </style>
+  </head>
+  <body>
+    <header><h1 style="color: whitesmoke; text-align: center; margin-bottom: 20px; margin-top: 5px ;">IsDB-BISEW</h1>
+      <img src="Images/Isdb_Biswe-removebg-preview.png"  >
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li class="dropdown">
+          <button class="dropbtn">HTML &#9662;</button>
+          <div class="dropdown-content">
+            <a href="chapter1.html">Chapter 1</a>
+            <a href="chapter2.html">Chapter 2</a>
+            <a href="chapter3.html">Chapter 3</a>
+            <a href="chapter4.html">Chapter 4</a>
+            <a href="chapter5.html">Chapter 5</a>
+            <a href="chapter6.html">Chapter 6</a>
+            <a href="chapter7.html">Chapter 7</a>
+            <a href="chapter8.html">Chapter 8</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <button class="dropbtn">CSS &#9662;</button>
+          <div class="dropdown-content">
+            <a href="chapter11CSS.html">Chapter 11</a>
+            <a href="chapter12CSS.html">Chapter 12</a>
+            <a href="chapter13CSS.html">Chapter 13</a>
+            <a href="chapter14CSS.html">Chapter 14</a>
+            <a href="chapter15CSS.html">Chapter 15</a>
+            <a href="chapter16CSS.html">Chapter 16</a>
+            <a href="chapter17CSS.html">Chapter 17</a>
+            <a href="chapter18CSS.html">Chapter 18</a>
+            <a href="chapter19CSS.html">Chapter 19</a>
+            <a href="chapter20CSS.html">Chapter 20</a>
+            <a href="chapter21CSS.html">Chapter 21</a>
+            <a href="chapter22CSS.html">Chapter 22</a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+    </header>
+    <section>
+      <article>
+        <p>Submitted to: Zahidul Hasan</p>
+        <p>ASP.Net Cross Platform Apps</p>
+        <p>Tsp: Star Computer Systems Limited</p>
+      </article>
+        <article>
+          <p>Student Info</p>
+          <p>Name:Sonia Khatun</p>
+          <p>Trainee Id:1285868</p>
+          <p>Batch:CS/SCSL-A/63/01</p>
+        </article>
+    </section>
+  </body>
+</html>

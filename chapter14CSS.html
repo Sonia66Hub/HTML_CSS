@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+    #my_element
+        {
+            width: 200px;
+            height: 200px;
+            padding: 10px;
+            border: 5px solid red;
+            margin: 8px;
+            /* box-sizing: border-box; */
+            box-sizing: content-box;
+        }
+
+        #parent
+        {
+            border: 10px solid transparent;
+            border-radius: 5%;
+            padding: 15px;
+            border-image: url("borderimage.png")30 stretch;
+       
+            border-image: url(borderimage.png)30 round;
+        }
+        #child-one
+        {
+            border: 1px solid red; margin: 30px;
+        }
+        #child-two
+        {
+            border: 1px solid blue; margin: 60px;
+        }
+        p {
+        outline: 5px dotted red;
+        }
+ p[id] {
+padding: 20px;
+width: 100px;
+height: 50px;
+background: green;
+}
+#p1 {
+border-radius: 10px;
+}
+#p2 {
+border-radius: 50%;
+}
+
+
+    </style>
+</head>
+<body>
+    <pre id="my_element"></pre>
+    <span id="result"></span>
+
+    <div id="parent">
+        <div id="child-one">This element has a mergin of 30px</div>
+        <div id="child-two">This element has a mergin of 60px</div>
+    </div>
+
+    <p>This is a paragraph.</p>
+
+    <script>
+        var myElement= document.getElementById('my_element');
+        var width = myElement.offsetWidth;
+        var height = myElement.offsetHeight;
+        document.getElementById('result').innerHTML = "Element size:width= "+width +",height="+height;
+    </script>
+    
+    <div class="box">This is a box with border-box sizing!</div>
+
+    <div class="box">This is a box with content-box sizing!</div>
+
+    <p><label for="">CSS Margins</label></p>
+    <div class="container">
+        <div class="box box1">Box 1</div>
+        <div class="box box2">Box 2</div>
+        <div class="box box3">Box 3</div>
+    </div>
+
+    <div id="parent">
+        <div id="child">This element has an auto margin.</div>
+        </div>
+        
+
+        <p><label for=""> Collapsing Margins</label></p>
+        <div id="parent">
+            <div id="child-one">This element has a margin of 30px.</div>
+            <div id="child-two">This element has a margin of 60px.</div>
+            </div>
+            
+            <p>border-radius: 10px:</p>
+            <p id="p1"></p>
+            <p>border-radius: 50%:</p>
+            <p id="p2"></p>
+            
+            <p><label for=""> CSS Border Images</label></p>
+            <p id="border-img-round"></p>
+            <p id="border-img-stretch"></p>
+
+            <p><label for=""> CSS Width and Height</label></p>
+            <p style="
+                border: 1px solid black;
+                width: 100px;
+                height: 100px;
+                ">This is a paragraph.</p><br>
+                 <a href="index.html">Go Back</a>
+
+    </body>
+    
+</html>

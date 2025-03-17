@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       .gradient-background {
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(circle, red, yellow);
+}
+    </style>
+</head>
+<body>
+    h1 style="text-align: center;">***Chapter:7***</h1><br><br>
+
+    <h3>Line</h3>
+    <svg height="100" width="100";>
+        <line x1="0" y1="0" x2="100" y2="100" stroke="black" width="2"/>
+    </svg><br><hr>
+     
+    <h3>Rect</h3>
+    <svg  height="100" width="100" style="background-color: rgb(185, 107, 5);">
+        <rect  x="10" y="10" height="60" width="80" stroke="whitesmoke" width="4" fill="black" />
+    </svg><br>
+
+    
+    <svg height="100" width="100" style="background-color: rgb(185, 107, 5)">
+        <rect x="10" y="10" height="60" width="80" stroke="whitesmoke" width="4" fill="black" rx="8" ry="8"/>
+    </svg><br><hr>
+
+     <h3>Circle</h3>
+    <svg height="100" width="100" style="background-color: rgb(185, 107, 5);">
+        <circle cx="50" cy="50" r="40" stroke="whitesmoke" stroke-width="2" fill="black"/>
+    </svg><br><hr>
+
+    <h3>Elipse</h3>
+    <svg height="100" width="100" style="background-color: rgb(185, 107, 5);">
+     <ellipse cx="50" cy="50" rx="40" ry="20" stroke="whitesmoke" stroke-width="2" fill="black"/>
+    </svg><br><hr>
+
+
+    <h3>Polyline</h3>
+    <svg height="100" width="100" style="background-color:rgb(185, 107, 5);">
+    <polyline points="50,0,100,50,50,100,0,50" fill="none" stroke="whitesmoke" stroke-width="2"/>
+ </svg><br><hr>
+
+<h3>Polygon</h3>
+<svg height="100" width="100" style="background-color: rgb(185, 107, 5);">
+    <polygon points="50,0,100,50,50,100,0,50" fill="black" stroke="whitesmoke" storoke-width="2"/>
+ </svg><br><br>
+
+
+ <svg width="100" height="100" style="background-color: rgb(185, 107, 5);;" >
+    <polygon points="33,4,13,60,63,20,4,20,53,60" fill="black"/>
+</svg><br><hr>
+
+
+<h3>Path</h3>
+<svg height="100" width="100" style="background-color: rgb(185, 107, 5);">
+   <path d="M50 0 L25 80 l50 0 Z" fill="none" stroke="whitesmoke" stroke-width="2"/>
+ </svg><br><hr>
+
+<h3>Text</h3>
+<svg height="200" width="200" style="background-color: rgb(185, 107, 5);">
+ <text x="20" y="20" fill="whitesmoke" transform="rotate(30)">First Line
+     <tspan x="30" y="50" fill="black">Second line</tspan>
+     <tspan x="50" y="80">Third line</tspan>
+ </text>
+ </svg><br><hr>
+
+
+<h3> Gradient-Linear </h3>
+<svg height="100" width="200" style="background-color: rgb(185, 107, 5);">
+   <defs>
+     <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="0%">
+         <stop offset="0%" stop-color="red"/>
+         <stop offset="50%" stop-color="green"/>
+         <stop offset="100%" stop-color="yellow"/>
+     </linearGradient>
+   </defs>
+   <rect x="0" y="0" width="200" height="100" fill="url(#grad)"/>
+ </svg><br><hr>
+
+
+<h3> Radial -gradient</h3>
+<div class="gradient-background"></div>
+
+                                                    
+                                                
+                                        
+<a href="index.html">Go Back</a>                         
+</body>
+</html>

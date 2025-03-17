@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        article{
+color: red;
+}
+p {
+text-decoration-line: underline;
+}
+.p1 {
+text-decoration-style: double;
+}
+.p2 {
+text-decoration-style: dotted;
+}
+.p3 {
+text-decoration-style: dashed;
+}
+.p4 {
+text-decoration-style: wavy;
+}
+.test-word-wrap {
+width: 200px;
+border: 1px solid #000000;
+word-wrap: break-word;
+} 
+p[class] {
+width: 140px;
+border: 1px solid #000000;
+}
+.test-keep-all {
+word-break: keep-all;
+}
+
+.test-one {
+word-spacing: -5px;
+}
+.test-two {
+word-spacing: 5px;
+}
+.myClass1{
+text-align: justify;
+}
+.myClass2 {
+text-align: center;
+}
+.myClass3 {
+text-align: right;
+}
+
+    </style>
+</head>
+<body>
+    <p><label for=""><h3>Text Rendering</h3></label></p>
+   <article>The Independence Day of Bangladesh is observed on the 26th March every year. </article>
+
+   <p><label for=""><h3>Text Decoration
+</h3></label></p>
+   <p class="p1">This is the 1st paragraph.</p>
+<p class="p2">This is the 2nd paragraph.</p>
+<p class="p3">This is the 3rd paragraph.</p>
+<p class="p4">This is the 4th paragraph.</p>
+<p>This is the 5th paragraph.</p>
+
+<p><label for=""><h3> Text Transform</h3></label></p>
+<p style="text-transform: capitalize;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque similique voluptate velit, consectetur aliquam labore! Reprehenderit ad repudiandae doloremque dicta itaque, labore ipsam ea, cumque, aliquam quidem mollitia tempora similique!</p>
+
+
+<p><label for=""><h3>Handling Whitespaces</h3></label></p>
+<h1>This is the heading</h1>
+<p style="white-space: pre-wrap;">
+    The Independence Day of Bangladesh is observed on the 26th March every year. 
+    War for independence started on the 26th March in 1971 and lasted till our victory on the 16th of December. 
+    It took place as a result of the discrimination, oppression and suppression of the west Pakistani rulers. 
+    The war continued for long nine months. It was a bloody struggle. 
+    More than 30 lacks of people sacrificed their valuable lives for the sake of freedom.
+</p>
+
+<p><label for=""><h3>Text Overflow</h3></label></p>
+<p class="test-clip" style="white-space: nowrap;
+width: 200px;
+border: 1px solid #000000;
+overflow: hidden;
+text-overflow: clip;">
+text-overflow: clip - This is some text</p>
+<p class="test-ellipsis">text-overflow: ellipsis - This is some
+text</p>
+
+<p><label for=""><h3>Word Wrap
+</h3></label></p>
+<p class="test-word-wrap">
+    This paragraph contains a very long word:
+    thisisaveryveryveryveryveryverylongword. The long word will break
+   and wrap to the next line.
+   </p>
+   
+   <p><label for=""><h3>Word Break
+</h3></label></p>
+   <p>Testing "word-break: keep-all"</p>
+<p class="test-keep-all">This is a-very-long-hyphen word, and this is
+averyveryveryveryveryverylong word.</p>
+<p>Testing "word-break: break-word"</p>
+<p class="test-break-word">This is a-very-long-hyphen word, and
+this is averyveryveryveryveryverylong word.</p>
+
+<p><label for=""><h3>Text Spacing</h3></label></p>
+<p>This paragraph is for testing.</p>
+<p class="test-one">Road accidents are a common problem in our society</p>
+<p class="test-two">Road accidents are a common problem in our society</p>
+
+<p><label for=""><h3>Text Align</h3></label></p>
+<p>Road accidents happen often and can lead to serious injuries or death. It’s important to be careful and follow traffic rules to reduce the risk..</p>
+    <p class="myClass1">Road accidents happen often and can lead to serious injuries or death. It’s important to be careful and follow traffic rules to reduce the risk.</p>
+    <p class="myClass2">Road accidents happen often and can lead to serious injuries or death. It’s important to be careful and follow traffic rules to reduce the risk..</p>
+    <p class="myClass3">Road accidents happen often and can lead to serious injuries or death. It’s important to be careful and follow traffic rules to reduce the risk..</p><br>
+    <a href="index.html">Go Back</a>
+
+</body>
+</html>

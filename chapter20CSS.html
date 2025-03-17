@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        .button {
+            padding: 15px 30px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #2ecc71; 
+        }
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: #3498db;
+            color: white;
+            line-height: 200px;
+            text-align: center;
+            border-radius: 10px;
+            transition: all 0.5s ease-in-out; 
+        }
+
+        .box:hover {
+            width: 300px; 
+            background-color: #e74c3c; 
+            transform: rotate(45deg);
+        }
+        .box1 {
+            width: 200px;
+            height: 200px;
+            background-color: #3498db;
+            color: white;
+            line-height: 200px;
+            text-align: center;
+            border-radius: 10px;
+            transition: background-color 1s ease 0.5s; 
+        }
+
+        .box:hover1 {
+            background-color: #e74c3c; 
+        }
+        @keyframes my-animation {
+ from {
+background-color: red;
+ }
+ to {
+background-color: yellow;
+ }
+}
+div {
+width: 100px;
+height: 100px;
+background-color: green;
+animation-name: my-animation;
+animation-duration: 4s;
+}
+.box2 {
+            width: 100px;
+            height: 100px;
+            background-color: #e74c3c;
+            position: relative;
+            animation: move 3s ease-in-out infinite;
+        }
+
+        @keyframes move {
+            0% {
+                left: 0;
+            }
+            100% {
+                left: 300px;
+            }
+        }
+        
+        .box3 {
+            width: 100px;
+            height: 100px;
+            background-color: #3498db;
+            position: relative;
+            animation: moveColorRotate 4s infinite;
+            animation-delay: 2s; /
+        }
+
+        @keyframes moveColorRotate {
+            0% {
+                left: 0;
+                top: 0;
+                background-color: #3498db;
+                transform: rotate(0deg);
+            }
+            50% {
+                left: 200px;
+                top: 100px;
+                background-color: #e74c3c;
+                transform: rotate(180deg);
+            }
+            100% {
+                left: 0;
+                top: 0;
+                background-color: #3498db;
+                transform: rotate(360deg);
+            }
+        }
+        .box4 {
+            width: 100px;
+            height: 100px;
+            background-color: #3498db;
+            position: relative;
+            animation: moveColorRotate 4s ease-in-out 3; 
+        }
+
+        @keyframes moveColorRotate {
+            0% {
+                left: 0;
+                top: 0;
+                background-color: #3498db;
+                transform: rotate(0deg);
+            }
+            50% {
+                left: 200px;
+                top: 100px;
+                background-color: #e74c3c;
+                transform: rotate(180deg);
+            }
+            100% {
+                left: 0;
+                top: 0;
+                background-color: #3498db;
+                transform: rotate(360deg);
+            }
+        }
+        .box6 {
+            width: 100px;
+            height: 100px;
+            background-color: #3498db;
+            position: relative;
+            animation: moveColorRotate 4s reverse infinite; 
+        }
+
+        @keyframes moveColorRotate {
+            0% {
+                left: 0;
+                top: 0;
+                background-color: #3498db;
+                transform: rotate(0deg);
+            }
+            100% {
+                left: 200px;
+                top: 200px;
+                background-color: #e74c3c;
+                transform: rotate(360deg);
+            }
+        }
+        .box7 {
+            width: 100px;
+            height: 100px;
+            background-color: #3498db;
+            position: relative;
+            animation: moveEaseIn 4s ease-in infinite;
+        }
+
+        @keyframes moveEaseIn {
+            0% {
+                left: 0;
+                top: 0;
+            }
+            100% {
+                left: 200px;
+                top: 200px;
+            }
+        }
+        .box8 {
+            width: 100px;
+            height: 100px;
+            background-color: #3498db;
+            position: relative;
+            animation: moveBox 3s linear infinite;
+        }
+
+        @keyframes moveBox {
+            0% {
+                left: 0;
+                top: 0;
+            }
+            100% {
+                left: 200px;
+                top: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <p><label for="">CSS Transitions</label></p>
+    
+    <button class="button">Hover over me!</button>
+
+    <div class="box">Hover me!</div>
+    <p><label for="">CSS Transitions</label></p>
+
+    <div></div>
+
+    <p><label for="">CSS Animations Two-step Keyframes</label></p>
+    <div class="box2"></div>
+    <p><label for="">CSS Animations Multiple Keyframes </label></p>
+    <div class="box3"></div>
+
+    <p><label for="">CSS Animations Animation Delay </label></p>
+    <div class="box4"></div>
+    <p><label for="">CSS Animations Iteration Count </label></p>
+    <div class="box5"></div>
+    <p><label for="">CSS Animations animation-direction </label></p>
+    <div class="box6"></div>
+    <p><label for="">CSS Animations Timing Function</label></p>
+    <div class="box7"></div>
+    <p><label for="">CSS Animations Shorthand Animation </label></p>
+    <div class="box8"></div>
+    <a href="index.html">Go Back</a>
+</body>
+</html>

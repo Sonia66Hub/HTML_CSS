@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         p {
+color: red;
+}
+#my-text {
+color: yellow;
+}
+.countryName{
+    background-color: #ffffff;
+    
+}
+:link {
+color: green;
+}
+:visited {
+color: red;
+}
+
+
+:enabled {
+background-color: cyan;
+}
+:disabled {
+background-color: #ccc;
+}
+input:invalid {
+background-color: lightpink;
+}
+input:out-of-range {
+background-color: lightblue;
+}
+input:required {
+background-color: lightgreen;
+}
+.parent > .child {
+    background-color: lightblue;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+}
+.parent1 .child:first-child {
+    background-color: lightcoral;
+    color: white;
+}
+.parent2 .child:last-child {
+    background-color: lightseagreen;
+    color: white;
+}
+
+.parent3 .child:nth-child(2) {
+    background-color: red;
+    font-weight: red;
+}
+p:first-child {
+    color: red;
+}
+
+
+div:last-child {
+    border: 2px solid green;
+}
+
+
+button:nth-child(2) {
+    background-color: yellow;
+}
+
+div1:empty {
+height: 20px;
+border: 1px solid red;
+}
+
+input:not([type="submit"]) {
+background-color: cyan;
+}
+p2::before {
+    content: "🔹"; 
+    margin-right: 10px;}
+
+    a1::after {
+    content: "🔗";  
+    margin-left: 5px;
+}
+.first ~ p {
+    color: green;
+    font-weight: bold;
+}
+
+input[type] {
+    border: 2px solid green;
+}
+a[href="https://www.example.com"] {
+    color: red;
+}
+
+div[class~="red"] {
+    background-color: red;
+    color: white;
+}
+
+img[src^="image"] {
+    border: 2px solid black;
+}
+
+img1[src$=".jpg"] {
+    border: 5px solid red;
+}
+a[href*="products"] {
+    font-weight: bold;
+}
+    </style>
+</head>
+
+   
+<div>
+    <div>
+        <p><label for=""> <h3> Type Selector: </h3></label></p>
+        <p>Some text</p>
+        </div>
+        <p>Another text</p>
+    </div>
+
+    <p><label for=""> <h3> ID Selector: </h3></label></p>
+    <div>
+        <p id="my-text">Some text</p>
+        </div>
+        <p>Another text</p>
+
+        <p><label for=""> <h3> Class Selector: </h3></label></p>
+        <div class="countryName">Bangladesh</div>
+
+        <p><label for=""> <h3> Pseudo-class link: </h3></label></p>
+        <a>This is not a link</a>
+        <a href="https://neodtruman.com" target="_blank">My
+        Website</a>
+        <a href="https://fonts.google.com" target="_blank">Google
+        Fonts</a>
+
+        <p><label for=""> <h3> Cursor Interaction: </h3></label></p>
+            <p>Press TAB to remove the focus on the button.</p>
+            <button>This is a button</button>
+
+            <p><label for=""> <h3> Status of Elements: </h3></label></p>
+            <p>Update user's information</p>
+            <p>Username: <input type="text" value="username" disabled />
+            </p>
+            <p>Email: <input type="text" value="email@company.com" /></p>
+
+            <p><label for=""> <h3>  Form Validation 1:invalid </h3></label></p>
+            <form action="">
+                <p>This text input must be a three-letter code:</p>
+                <input type="text" name="code" pattern="[A-Za-z]{3}"
+                title="Three letter code." value="a" />
+                </form>
+
+                <p><label for=""> <h3>  Form Validation 2:required </h3></label></p>
+                <form action="">
+                    <p>This date input is required:</p>
+                    <input type="date" id="dob" name="dob" class="inputStyle" required>
+
+                    <p><label for=""> <h3>  Form Validation 3:out-of-range </h3></label></p>
+                    <form action="">
+                        <p>This number input must be in the range of 1 - 6:</p>
+                        <input type="number" name="quantity" min="1" max="6"
+                        value="8" />
+                        </form>
+
+                        <p><label for=""> <h3> Child Elements </h3></label></p>  
+                        <div class="parent">
+                            <div class="child">Child 1</div>
+                            <div class="child">Child 2</div>
+                            <div class="child">Child 3</div>
+                        </div>
+
+                        <p><label for=""> <h3> Child Elements1 :first-child </h3></label></p>  
+                        <div class="parent1">
+                            <div class="child">Child 1</div>
+                            <div class="child">Child 2</div>
+                            <div class="child">Child 3</div>
+                        </div>
+
+                        <p><label for=""> <h3> Child Elements :last-child </h3></label></p>  
+                        <div class="parent2">
+                            <div class="child">Child 1</div>
+                            <div class="child">Child 2</div>
+                            <div class="child">Child 3</div>
+                        </div>
+
+                        <p><label for=""> <h3> Child Elements :Nth-child </h3></label></p>  
+                        <div class="parent3">
+                            <div class="child">Child 1</div>
+                            <div class="child">Child 2</div>
+                            <div class="child">Child 3</div>
+                        </div>
+                        <p><label for=""> <h3> Type of element</h3></label></p>  
+                        <h1>This is a heading</h1>
+                        <p>This is a paragraph.</p>
+                        <button>Click Me</button>
+                        <div>This is a div element.</div>
+
+                        <p><label for=""> <h3> Others psudo-class</h3></label></p>  
+                        <div1></div1>
+                        <div1></div1>
+                        <div1>This is not empty!</div1>
+
+                        
+                        <p><label for=""> <h3>psudo-class :not(selector)
+                        </h3></label></p>  
+                        <p>Update user's information</p>
+                        <p>Address: <input type="text" value="Your address" /></p>
+                        <p>Email: <input type="text" value="email@company.com" /></p>
+                        <input type="submit" value="Submit" />
+
+
+                        <p><label for=""> <h3>psudo-class :not(selector)
+                        <p2>This is a paragraph with a bullet before it.</p2>
+
+                        
+                            <p><label for=""> <h3>psudo-class :::after(selector)
+                        <a1 href="https://example.com">Visit Example</a1>
+
+
+                        <p><label for=""> <h3>General Sibling Selector(selector)
+                        <div>
+                            <p class="first">First paragraph</p>
+                            <p class="second">Second paragraph</p>
+                            <p class="third">Third paragraph</p>
+                            <p class="fourth">Fourth paragraph</p>
+                        </div>
+
+
+                        <p><label for=""> <h3>CSS Attribute Selector(selector)
+                        <input type="text" placeholder="Name">
+                        <input type="email" placeholder="Email">
+                        <input type="text" placeholder="Username">
+
+                        <p><label for=""> <h3>CSS Attribute Value Selector(selector)
+                        <a href="https://www.example.com">Visit Example</a>
+                        <a href="https://www.another.com">Visit Another</a>
+                        <a href="https://www.example.com">Visit Example Again</a>
+
+                        <p><label for=""> <h3>CSS Attribute [attribute~="value"](selector)
+                        <div class="box red">Red Box</div>
+                        <div class="box blue">Blue Box</div>
+                        <div class="box green">Green Box</div>
+
+
+                        <p><label for=""> <h3>CSS Attribute [attribute^="value"](selector)
+                        <img src="image1.jpg" alt="First Image">
+                        <img src="image2.jpg" alt="Second Image">
+                        <img src="image3.png" alt="Third Image">
+
+
+                        <p><label for=""> <h3>CSS Attribute [attribute$="value"](selector)
+                        <img1 src="logo.png" alt="Logo">
+                        <img1 src="banner.jpg" alt="Banner">
+                        <img1 src="image.jpg" alt="Image">
+
+                            <p><label for=""> <h3>CSS Attribute [attribute*="value"](selector)
+                            <a href="https://www.example.com/products">Products</a>
+                            <a href="https://www.example.com/services">Services</a>
+                            <a href="https://www.example.com/about">About</a><br>
+                            <a href="index.html">Go Back</a>
+</body>
+</html>

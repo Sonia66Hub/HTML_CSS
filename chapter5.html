@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <body>
+        <h1 style="text-align: center;">***Chapter:5***</h1><br><br>
+
+
+       <form action="/Chapter_4.html">
+            <fieldset>
+                File:
+                <p> <img id="output" width="100px"> </p>
+                <p><input onchange="loadImage(event)" type="file" name="fileName" id="file" accept="image/*"></p>
+               
+                <legend>
+                   Car Registration
+                </legend>
+                    <label for="fName">First Name:</label>
+                    <input name="firstName" id="fName" value="Sonia" placeholder="First Name" readonly><br><br>
+                    <label for="lName">Last Name:</label>
+                    <input name="lastName" id="lName" placeholder="Yesmin"><br><br>
+
+
+                    <label for="Subject">Select Subject</label>
+                    <select name="Subject" id="Subject" size="2">
+                        <option value="cf">Computer Fundamental</option>
+                        <option value="sql">SQL</option>
+                        <option value="c_sharp">C#</option>
+                    </select><br><br>
+
+                    <label for="Subject">Select Subject</label>
+                    <select name="Subject" id="Subject" multiple>
+                        <option value="html">HTML</option>
+                        <option value="css">CSS</option>
+                        <option value="javascript">Javascript</option>
+                    </select><br><br>
+                   
+                    <label for="Subject">Select Subject</label>
+                    <select name="Subject" id="Subject">
+                        <optgroup label="Module-1">
+                            <option value="cf">Computer Fundamental</option>
+                            <option value="sql">SQL</option>
+                            <option value="c_sharp">C#</option>
+                        </optgroup>
+               
+                        <optgroup label="Module-1">
+                            <option value="html">HTML</option>
+                            <option value="css">CSS</option>
+                            <option value="javascript">Javascript</option>
+                        </optgroup>
+                    </select> <br>
+
+                    <hr>
+
+                    <datalist id="subject-list">
+                        <option value="cf">Computer Fundamental</option>
+                        <option value="sql">SQL</option>
+                        <option value="c_sharp">C#</option>
+                        <option value="html">HTML</option>
+                        <option value="css">CSS</option>
+                        <option value="javascript">Javascript</option>
+                    </datalist>
+                    <input type="text" name="subjects" list="subject-list"> <br>
+               
+                   
+                <button disabled>Submit</button><br><br>
+                <button style="color: aliceblue; background-color: rgb(7, 93, 133) ; border: burlywood; border-radius: 5%;" onclick="alert('Your Resistration has been submitted!')">Submit</button>
+                <br><hr>
+
+                Button <br>
+                <input type="button" value="Click Here" onclick="alert('I am an input type button')">
+                <br><br>
+
+                Submit <br>
+                <input type="submit" value="Submit this">
+                <br><br>
+
+                Reset <br>
+                <input type="reset" value="Reset form">
+                <br><br>
+                <input type="image" src="images/submitbutton.jpg" alt="It's an image button" width="100px">
+                <br><br>
+
+                Email <br>
+                <label for="email">Email Address:</label>
+                <input type="email" name="email" id="email" placeholder="example@gmail.com"/>
+                <br><br>
+
+                AutoFocus: <br>
+                <label for="email">Email Address:</label>
+                <input type="email" name="email" id="email" placeholder="example@gmail.com" autofocus/>
+                <br><br>
+
+                AutoComplete: <br>
+                <label for="name">Name:</label>
+                <input type="text" name="name" autocomplete />
+                <br><br>
+
+                URL <br>
+                    <label>URL:</label>
+                <input type="url" name="mySite" id="" placeholder="Enter URL"/>
+
+                <br><br>
+                Hidden: <br>
+                <input type="hidden" name="userId" value="123"/><br>
+                <input type="text" name="userId" value="123"/><br><br>
+
+                Number: <br>
+                <label>Salary:</label>
+                <input type="number" name="salary"/>
+                <br><br>
+
+                Step: <br>
+                <label>Salary:</label>
+                <input type="number" name="salary" step="2"/>
+                <br><br>
+
+                Range:
+                <label for="pointInputId">Set your mark(0-100)</label>
+                <input type="range" id="pointInputId" value="25" min="0" max="100" oninput="pointOutputId.value=pointInputId.value">
+                <output id="pointOutputId">25</output><br><br>
+                
+                <fieldset>
+                    <legend>Select Module</legend>
+                CheckBox: <br>
+                <input type="checkbox" name="CF" id="module1" value="Computer Fundamental">
+                <label for="module1">Computer Fundamental</label>
+
+                <input type="checkbox" name="SQL" id="module2" value="SQL Server">
+                <label for="module2">SQL Server Management</label>
+
+                <input type="checkbox" name="C#" id="module3" value="C Sharp">
+                <label for="module3">C Sharp</label>
+                </fieldset>
+                <br><hr>
+
+                <fieldset>
+                    <legend>Select Course</legend>
+                Radio Button: <br>
+                <input type="radio" name="course" id="C#" value="C#">
+                <label for="C#">C Sharp</label>
+
+                <input type="radio" name="course" id="J2EE" value="J2EE">
+                <label for="J2EE">Java</label>
+
+                <input type="radio" name="course" id="nt" value="nt">
+                <label for="nt">Networking</label>
+                </fieldset>
+                <br><br>
+
+                Date: <br>
+                <label for="joinDate"> Join Date</label>
+                <input type="date" name="joinDate" id="joinDate"><br><br>
+
+                Time:<br>
+                <label for="time"> Time </label>
+                <input type="time" name="alarmTime" /><br><br>
+
+                DateTime local: <br>
+                <label for="joinDate"> Join Date</label>
+                <input type="datetime-local" name="joinDate" id="joinDate"><br><br>
+
+                Color: <br>
+                <input type="color" name="bgcolor"> <br><br>
+                <hr>
+
+                Pattern:
+                <p>This text input must be a six-letter code:</p>
+                <input type="text" name="code" pattern="[A-Za-z]{6}"
+                title="Six letter code." /><br><br>
+
+                <hr>
+                Pasword and Confirm Password:<br><br>
+                <label for="password">Password:</label>
+                <input onkeyup="check()" id="password" type="password" name="password" placeholder="Enter password"><br><br>
+                <label for="confirm password">Confirm Password:</label>
+                <input onkeyup="check()" id="confirm password" type="password" name="confirm password" placeholder="Enter password">
+                <span id="passmessage"></span>
+          </fieldset>
+       </form>
+
+       <script>
+        var check=function()
+        {
+            if(document.getElementById('password').value==document.getElementById('confirm password').value)
+            {
+                document.getElementById('passmessage').innerHTML='';
+            }
+            else
+            {
+                document.getElementById('passmessage').innerHTML='Not matching';
+                document.getElementById('passmessage').style.color='red';
+            }
+       
+        }
+
+        var loadImage = function(event)
+        {
+            var image = document.getElementById('output');
+            image.src= URL.createObjectURL(event.target.files[0]);
+         
+        }
+       </script>    
+    <a href="index.html">Go Back</a>
+</body>
+</html>

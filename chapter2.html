@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter_2</title>
+    <link rel="icon" type="html/icon" href="htmlLogo.png" />
+
+    <style>
+        table{
+          border-collapse: collaps;
+        }
+        th,td{
+          border: 1px solid black;
+        }
+        .days{
+          background-color: rgb(178, 221, 178);
+        }
+        .weekend{
+          background-color: rgb(9, 170, 9);
+        }
+
+        #myFrame{  
+          height: 200;
+          width: 200;
+          border: none;
+        }
+        footer{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">***Chapter:2***</h1><br><br>
+
+        <h1>The h1 tag is the most important heading and has the biggest font size.</h1>
+        <h2>2nd Heading</h2>
+        <h3>3rd Heading</h3>
+        <h4>4th Heading</h4>
+        <h5>5th Heading</h5>
+        <h6>This defines the least important heading and is the smallest one.</h6>
+    <hr>
+        <h1 id="mango">Mango</h1>
+        
+        <img src="a_mango.jpg" alt="This is a Mango" height="300"/>
+
+        <h2 id="lichi">Lichi</h2>
+        <h3 id="pineapple">Pineapple</h3>
+        <h4 id="orange">Orange</h4>
+
+        <h5 id="apple">Apple</h5>
+        <img src="an_apple.jpg" alt="This is an apple" height="300"/>
+
+        <a href="#apple">Go to The Apple</a><br/>
+        <a href="#mango">Go to The Mango</a><br/>
+        <a href="#">This will take you to the top</a><br/>
+
+    <hr>
+        <p>This is p tag which is used to write paragraph.</p>
+
+        <a href="HTMLCSS_Ch_1.html" target="_blank">Go to Chapter-1</a>
+
+    <hr>
+            <img src="navbar.jpg" alt="Navigation bar" usemap="#nav-bar"
+            width="160" height="80" />
+            <map name="nav-bar">
+            <area shape="rect" coords="20,20,80,60" alt="a mango"
+            href="#mango" />
+            <area shape="circle" coords="120,40,20" alt="an apple"
+            href="#apple" />
+            </map>
+    <hr>
+
+        <div>
+            <ul>
+<h3>Unordered List:</h3>
+                <li>Mango</li>
+                <li>Jack Fruit</li>
+                <li>Grapes</li>
+                <li>Banana</li>
+            </ul>
+            <ol>
+<h3>Ordered List:</h3> 
+                <li>Mango</li>
+                <li>Jack Fruit</li>
+                <li>Grapes</li>
+                <li>Banana</li>
+            </ol>
+    <hr>        
+            <dl>
+                <dt>HTML</dt>
+                <dd>Language for web</dd>
+                <dt>CSS</dt>
+                <dd>Cascading Style Sheet</dd>
+                <dt>Javascript</dt>
+                <dd>Popular Scripting Language</dd>
+            </dl>
+        </div>
+    <hr>
+         <!--Creating a calender-->
+    <div>
+        <table>
+         <caption>October 2024</caption>
+           <colgroup>
+                <col span="5" class="days"/>
+                <col span="2" class="weekend"/>   
+           </colgroup>
+           <thead>
+                <tr>
+                    <th>Sun</th>
+                    <th>Mon</th>
+                    <th>Tue</th>
+                    <th>wed</th>
+                    <th>Thu</th>
+                    <th>Fri</th>
+                    <th>Sat</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                  
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>7</td>
+                    <td>8</td>
+                    <td>9</td>
+                    <td>10</td>
+                    <td>11</td>
+                    <td>12</td>
+                
+                </tr>
+                <tr>
+                    <td>13</td>
+                    <td>14</td>
+                    <td>15</td>
+                    <td>16</td>
+                    <td>17</td>
+                    <td>18</td>
+                    <td>19</td>
+                </tr>
+                <tr>
+                    <td>20</td>
+                    <td>21</td>
+                    <td>22</td>
+                    <td>23</td>
+                    <td>24</td>
+                    <td>25</td>
+                    <td>26</td>
+                </tr>
+                <tr>
+                    <td>27</td>
+                    <td>28</td>
+                    <td>29</td>
+                    <td>30</td>
+                    <td>31</td>
+                    <td colspan="2"></td>
+                </tr>
+            </tbody>
+        </table>
+   </div>
+
+        <hr>
+        <p>I've added a line break here.<br> This sentence will be on the second line.</p>
+        <hr>
+        Uploading...
+        <p> <progress value="40" max="100"></progress>
+        40% uploaded.
+        </p>
+        
+        Experience...
+        <p> <input type="range"> </p>
+
+        <p>Disk Usage: <br>
+        <meter value="45" max="100"></meter>
+        45 GB of 100GB
+        </p>
+        <hr>
+        <code>
+            const x=100;
+            alert(x)
+        </code>
+        <hr>
+        <pre>
+            This is a  Page of  "HTML and CSS".
+            And we use pre tag to show how it works. It is used to display a text in the e browser's 
+            default
+            monospace font....
+        </pre>
+        <hr>
+        <h1>Web Development</h1>
+        <iframe id="myFrame" src="Chapter_1.html"></iframe>
+   <hr>
+        <h3>This is the end of the page.</h3>    
+       <footer>&copy;Name: Sonia Yesmin.</footer>
+       <footer>&copy;Trainee ID:1285868</footer>
+       <footer>&copy; Batch:CS/SCSL-A/63/01</footer>
+    <button onclick="updateProgress()">Update Progress</button><br>
+
+    <a href="index.html">Go Back</a>
+    <script>
+        function updateProgress() {
+            var progressBar = document.getElementById('progressBar');
+            var currentValue = progressBar.value;
+            if (currentValue < 100) {
+                progressBar.value = currentValue + 10; 
+            }
+        }
+
+            
+
+    </script>
+</body>
+</html>
