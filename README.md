@@ -1,7 +1,21 @@
-# 🌐 Multi-Page Responsive Website Project
+# 🌐 Basic HTML & CSS Project 🚀
 
-Welcome to my basic multi-page website project built with **HTML5**, **CSS3**, and a touch of **JavaScript**. This site showcases various fundamental web development features with clean design, responsive layout, and interactive elements.
+👋 **Hello and welcome!**
 
+This is a beginner-friendly, fully responsive website project crafted using **HTML5** and **CSS3** — a milestone in my journey into web development. Developed step-by-step through practice and guided tutorials, this project represents my hands-on learning of core front-end concepts.
+
+---
+
+## 🔥 Project Overview
+
+This is a **multi-page, responsive web project** designed to adapt beautifully across mobile, tablet, and desktop screens. It demonstrates:
+
+- Clean and semantic HTML structure
+- Stylish and accessible UI using pure CSS
+- Media query-based responsiveness
+- Organized layout using **Flexbox** and **CSS Grid**
+
+Whether you're just starting out or brushing up your front-end skills, this project covers a solid foundation in modern web design.
 ---
 
 ## ✨ Features
